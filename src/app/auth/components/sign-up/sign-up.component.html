@@ -1,0 +1,117 @@
+<!-- registration.component.html -->
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="registration-card card shadow-lg">
+    <div class="card-body">
+      <!-- Top Buttons -->
+      <h3 class="text-center mb-4">Registration</h3>
+      <div class="top-buttons mb-4 text-center">
+        <button class="btn btn-primary btn-custom" (click)="showJobSeekerForm()">Are you a Job Seeker</button>
+        <button class="btn btn-secondary btn-custom" (click)="showEmployerForm()">Register as an Employer</button>
+      </div>
+
+      <!-- Job Seeker Form -->
+      <form *ngIf="showJobSeeker" class="form">
+        <div class="form-row mb-3">
+          <div class="form-group">
+            <label for="seekerFullname" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="seekerFullname" placeholder="Enter your full name">
+          </div>
+          <div class="form-group">
+            <label for="seekerEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="seekerEmail" placeholder="Enter your email">
+          </div>
+        </div>
+        <div class="form-row mb-3">
+          <div class="form-group">
+            <label for="seekerMobile" class="form-label">Mobile No.</label>
+            <input type="text" class="form-control" id="seekerMobile" placeholder="Enter your mobile">
+          </div>
+          <div class="form-group">
+            <label for="seekerGender" class="form-label">Gender</label>
+            <select class="form-select" id="seekerGender">
+              <option value="" disabled selected>Select Experience</option>
+              <option value="male">Fresher</option>
+              <option value="female">Experienced</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row mb-3">
+          <div class="form-group">
+            <label for="seekerResume" class="form-label">Upload Resume</label>
+            <input type="file" class="form-control" id="seekerResume" accept=".pdf,.doc,.docx">
+          </div>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-success btn-custom">Register</button>
+        </div>
+      </form>
+
+      <!-- Employer Form -->
+<form *ngIf="showEmployer" class="form">
+  <div class="form-row mb-3">
+    <div class="form-group">
+      <label for="employerCompanyName" class="form-label">Company Name</label>
+      <input type="text" class="form-control" id="employerCompanyName" placeholder="Enter your company name">
+    </div>
+    <div class="form-group">
+      <label for="employerContactEmail" class="form-label">Contact Email</label>
+      <input type="email" class="form-control" id="employerContactEmail" placeholder="Enter your contact email">
+    </div>
+  </div>
+
+  <div class="form-row mb-3">
+    <div class="form-group">
+      <label for="employerContactMobile" class="form-label">Contact Mobile No.</label>
+      <input type="text" class="form-control" id="employerContactMobile" placeholder="Enter your contact mobile">
+    </div>
+    <div class="form-group">
+      <label for="employerPhone" class="form-label">Phone Number</label>
+      <input type="text" class="form-control" id="employerPhone" placeholder="Enter your phone number">
+    </div>
+  </div>
+
+  <div class="form-row mb-3">
+    <div class="form-group">
+      <label for="employerGstNo" class="form-label">GST Number</label>
+      <input type="text" class="form-control" id="employerGstNo" placeholder="Enter your GST number">
+    </div>
+    <div class="form-group">
+      <label for="employerCity" class="form-label">City</label>
+      <input type="text" class="form-control" id="employerCity" placeholder="Enter your city">
+    </div>
+  </div>
+
+  <div class="form-row mb-3">
+    <div class="form-group">
+      <label for="employerState" class="form-label">State</label>
+      <input type="text" class="form-control" id="employerState" placeholder="Enter your state">
+    </div>
+    <div class="form-group">
+      <label for="employerPincode" class="form-label">Pincode</label>
+      <input type="text" class="form-control" id="employerPincode" placeholder="Enter your pincode">
+    </div>
+  </div>
+
+  <div class="form-row mb-3">
+    <div class="form-group">
+      <label for="employerAddress" class="form-label">Address</label>
+      <textarea class="form-control" id="employerAddress" rows="3" placeholder="Enter your address"></textarea>
+    </div>
+  </div>
+
+  <div class="form-row mb-3">
+    <div class="form-group">
+      <label for="employerLogo" class="form-label">Upload Company Logo</label>
+      <input type="file" class="form-control" id="employerLogo" accept="image/*">
+    </div>
+  </div>
+
+  <div class="text-center">
+    <button type="submit" class="btn btn-success btn-custom">Register</button>
+  </div>
+</form>
+
+    </div>
+  </div>
+</div>

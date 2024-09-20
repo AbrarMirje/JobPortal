@@ -1,0 +1,28 @@
+.navbar-brand img {
+    height: 50px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Make sure it scales responsively */
+}
+
+.navbar {
+    padding: 1rem; /* Add padding for better spacing */
+}
+
+.navbar .navbar-brand {
+    display: flex;
+    align-items: center; /* Vertically center logo and text */
+}
+
+.navbar-toggler {
+    border: none; /* Remove default border around navbar toggle */
+}
+
+.round-button {
+    border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 40px; /* Reduce size on smaller screens */
+    }
+}

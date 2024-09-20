@@ -1,0 +1,33 @@
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Center the card horizontally and add margin from the navbar */
+  .registration-card {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 20px; /* Space from top (adjust if needed) */
+  }
+
+  .top-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .btn-custom {
+    width: 48%;
+  }
+
+  /* Custom styling for input rows */
+  .form-row {
+    display: flex;
+    gap: 10px;
+  }
+
+  .form-row .form-group {
+    flex: 1;
+  }

@@ -1,0 +1,61 @@
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures full height for vertical centering */
+    margin: 0;
+    padding-top: 80px; /* Adds space from the navbar */
+    box-sizing: border-box; /* Ensures padding doesn't affect height */
+  }
+  
+  .login-container {
+    max-width: 400px;
+    width: 100%; /* Responsive width */
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Space between navbar and form */
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 50px; /* Space from top (adjust if needed) */
+  }
+  
+  .login-container h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #007bff;
+  }
+  
+  .btn-login {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+  }
+  
+  .btn-login:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-footer {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .form-footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .form-footer a:hover {
+    text-decoration: underline;
+  }
+  
